@@ -1,0 +1,67 @@
+/* prevent double-click highlighting */
+* {
+	-webkit-user-select: none;
+	-moz-user-select: none;
+	-ms-user-select: none;
+	-o-user-select: none;
+	user-select: none;
+}
+
+body {
+	margin: 10px 0 0 0;
+	color: #fff;
+}
+
+#main {
+	margin: 0 auto;
+	width: 640px;
+	height: 360px;
+	background: #444;
+	font-family: monospace;
+}
+
+#resources-container {
+	width: 340px;
+	position: relative;
+	float: left;
+	top: 24px;
+	left: 36px;
+	text-align: left;
+	font-size: 12px;
+}
+
+#resource-counter-container {
+	text-align: left;
+}
+
+.resource-counter {  }
+
+.resource-counter.latinum {
+	font-size: 64px;
+}
+
+
+#clicker-container {
+	float: left;
+	width: 128px;
+	position: relative;
+	left: 24px;
+	top: 24px;
+}
+
+.clicker {
+	cursor: pointer;
+}
+
+.clicker.clicker-latinum {
+	width: 128px;
+	height: 128px;
+	border: 1px solid #000;
+	border-radius: 8px;
+	background: #bbb url(../imgs/latinum-96-1.png) no-repeat 50% 50%;
+}
+
+.clicker-latinum:hover {
+	background-color: #fff;
+}
+

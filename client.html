@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<title>c</title>
+	<meta charset="utf-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<link rel="stylesheet" type="text/css" href="css/stylesheet.css">
+</head>
+<body>
+
+
+<div id="main">
+
+	<div id="clicker-container" style="border: 1px solid red;"></div>
+
+	<div id="resources-container" style="border: 1px solid blue;">
+		<div id="resource-counter-container"></div>
+		gold pressed latinum
+	</div>
+</div>
+
+
+
+<script type="text/javascript" src="js/uuid.js"></script>
+<script type="text/javascript" src="js/timestamp.js"></script>
+<script type="text/javascript" src="js/html.js"></script>
+<script type="text/javascript" src="js/resource.js"></script>
+<script type="text/javascript" src="js/clicker.js"></script>
+<script type="text/javascript" src="js/game.js"></script>
+<script type="text/javascript" src="js/data.js"></script>
+<script type="text/javascript">
+
+	game = new Game();
+	game.AddClicker(game_data.clicker_types.basic);
+	setInterval(function() { game.Tick(); }, 1000);
+
+</script>
+</body>
+</html>
