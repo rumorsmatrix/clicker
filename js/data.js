@@ -6,10 +6,10 @@
 game_data = {
 
 	'resource_types': {
-		'gold_pressed_latinum': new Resource({
-			'display_name': 'Gold-pressed Latinum',
+		'gold': new Resource({
+			'display_name': 'Gold',
 			'initial_value': 0,
-			'class_name': 'latinum',
+			'class_name': 'resource-gold',
 			'parent_id': 'resource-counter-container',
 		}),
 
@@ -19,20 +19,20 @@ game_data = {
 	'clicker_types': {
 
 		'basic': {
-			'display_name': 'Gold-pressed Latinum',
-			'class_name': 'clicker-latinum',
+			'display_name': 'Gold mine',
+			'class_name': 'clicker-gold-mine',
 			'parent_id': 'clicker-container',
 
 			'clickable': true,	// user can manually click this
-			'resource': 'gold_pressed_latinum',
+			'resource': 'gold',	// index in resource_types
 			'resources_per_click': 1,
 			'auto_clicks_per_second': 1,
 
-			'purchase_resource': 'gold_pressed_latinum',
+			'purchase_resource': 'gold',
 			'initial_purchase_price': 10,
 			'purchase_price_multiplier': 1.8,
 
-			'upgrade_resource': 'gold_pressed_latinum',
+			'upgrade_resource': 'gold',
 			'initial_upgrade_price': 14,
 			'upgrade_price_multiplier': 1.7,
 		},

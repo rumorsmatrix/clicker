@@ -36,32 +36,9 @@ body {
 
 .resource-counter {  }
 
-.resource-counter.latinum {
-	font-size: 64px;
-}
-
-
-#clicker-container {
-	float: left;
-	width: 128px;
-	position: relative;
-	left: 24px;
-	top: 24px;
-}
+#clicker-container { }
 
 .clicker {
 	cursor: pointer;
-}
-
-.clicker.clicker-latinum {
-	width: 128px;
-	height: 128px;
-	border: 1px solid #000;
-	border-radius: 8px;
-	background: #bbb url(../imgs/latinum-96-1.png) no-repeat 50% 50%;
-}
-
-.clicker-latinum:hover {
-	background-color: #fff;
 }
 
