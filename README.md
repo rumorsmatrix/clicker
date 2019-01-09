@@ -1,4 +1,4 @@
-# 🍪 Clicker
+# Clicker
 
 A simple (and unfinished) JavaScript implementation of the classic Cookie Clicker idle game genre. Made for a 48 hour game jam, which I failed, obviously. 
 
